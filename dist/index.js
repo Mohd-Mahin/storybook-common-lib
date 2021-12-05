@@ -6,18 +6,16 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
-    return _Button.default;
+    return _Button.Button;
   }
 });
 Object.defineProperty(exports, "Header", {
   enumerable: true,
   get: function get() {
-    return _Header.default;
+    return _Header.Header;
   }
 });
 
-var _Button = _interopRequireDefault(require("./Button"));
+var _Button = require("./Button");
 
-var _Header = _interopRequireDefault(require("./Header"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Header = require("./Header");
