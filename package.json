@@ -1,7 +1,6 @@
 {
-  "name": "common-library",
+  "name": "mahin-library-test",
   "version": "0.1.0",
-  "private": true,
   "main": "dist/index.js",
   "files": ["dist"],
   "repository": {
