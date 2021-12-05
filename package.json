@@ -6,7 +6,7 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Mohd-Mahin/storybook-common-lib.git"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
@@ -23,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore src/**/*.stories.js"
   },
   "eslintConfig": {
     "extends": [
