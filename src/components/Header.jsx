@@ -6,8 +6,27 @@ import './header.css';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
+
     <div className="wrapper">
       <div>
+      <eon-ui-button text="Button" icon="edit"></eon-ui-button>
+      <eon-ui-contact-list headline="Contacts" role="list">
+    <eon-ui-contact-list-item role="listitem">
+      <eon-ui-link size="small" text="E.ON Website" href="https://www.eon.com" target="_blank"></eon-ui-link>
+    </eon-ui-contact-list-item>
+    <eon-ui-contact-list-item role="listitem">
+      <eon-ui-link size="small" text="German E.ON Website" href="https://www.eon.de" target="_blank"></eon-ui-link>
+    </eon-ui-contact-list-item>
+  </eon-ui-contact-list>
+  <eon-ui-slider
+  scheme="turquoise"
+  type="range"
+  min-range="0"
+  max-range="100"
+  step="5"
+  first-handle-start="25"
+  second-handle-start="75"
+></eon-ui-slider>
         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
             <path
